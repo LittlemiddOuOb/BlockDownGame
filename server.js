@@ -21,7 +21,7 @@ const db = DB.create({ filename: 'game.db', autoload: true });
 console.log('✅ NeDB 資料庫載入成功！');
 
 // =================【1. 儲存與更新資料 API (POST)】=================
-app.post('/api/saveData', async (req, res) => {
+app.post('https://blockdowngame.onrender.com/api/saveData/:playerName', async (req, res) => {
     try {
         // 從遊戲端接收完整的資料包
         const { 
@@ -57,7 +57,7 @@ app.post('/api/saveData', async (req, res) => {
 });
 
 // =================【2. 讀取資料 API (GET)】=================
-app.get('/api/loadData/:playerName', async (req, res) => {
+app.get('https://blockdowngame.onrender.com/api/saveData/:playerName', async (req, res) => {
     try {
         const playerName = req.params.playerName;
         console.log(`📤 準備讀取玩家 [${playerName}] 的雲端資料...`);
