@@ -43,6 +43,8 @@ gdjs.MainCode.GDNewSprite2Objects2= [];
 
 gdjs.MainCode.asyncCallback12946604 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.MainCode.localVariables);
+{runtimeScene.getGame().getVariables().getFromIndex(27).setString("Guest");
+}
 gdjs.MainCode.localVariables.length = 0;
 }
 gdjs.MainCode.idToCallbackMap.set(12946604, gdjs.MainCode.asyncCallback12946604);
