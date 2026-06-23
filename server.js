@@ -57,7 +57,7 @@ app.post('/api/saveData/:playerName', async (req, res) => {
 });
 
 // =================【2. 讀取資料 API (GET)】=================
-app.get('/api/saveData/:playerName', async (req, res) => {
+app.get('/api/SaveData/:playerName', async (req, res) => {
     try {
         const playerName = req.params.playerName;
         console.log(`📤 準備讀取玩家 [${playerName}] 的雲端資料...`);
