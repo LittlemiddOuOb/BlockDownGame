@@ -55,7 +55,7 @@ gdjs.MainCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.MainCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("http://127.0.0.1/api/loadData/:playerName", "", "GET", "application/json", runtimeScene.getScene().getVariables().getFromIndex(3), runtimeScene.getScene().getVariables().getFromIndex(4)), (runtimeScene) => (gdjs.MainCode.asyncCallback12946604(runtimeScene, asyncObjectsList)), 12946604, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("/api/loadData/" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(27)), "", "GET", "application/json", runtimeScene.getScene().getVariables().getFromIndex(3), runtimeScene.getScene().getVariables().getFromIndex(4)), (runtimeScene) => (gdjs.MainCode.asyncCallback12946604(runtimeScene, asyncObjectsList)), 12946604, asyncObjectsList);
 }
 }
 

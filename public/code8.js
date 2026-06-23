@@ -232,7 +232,7 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(2).getAsNumber() == 0);
 }
 if (isConditionTrue_0) {
-{gdjs.evtTools.network.sendAsyncRequest("http://127.0.0.1/api/saveData", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(20)), "POST", "application/json", runtimeScene.getScene().getVariables().getFromIndex(3), gdjs.VariablesContainer.badVariable);
+{gdjs.evtTools.network.sendAsyncRequest("/api/saveData/", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(20)), "POST", "application/json", runtimeScene.getScene().getVariables().getFromIndex(3), gdjs.VariablesContainer.badVariable);
 }
 {runtimeScene.getScene().getVariables().getFromIndex(2).setNumber(1);
 }

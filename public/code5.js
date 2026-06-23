@@ -263,7 +263,7 @@ gdjs.GameoverCode.eventsList2 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.GameoverCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("http://127.0.0.1/api/saveData", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(20)), "POST", "application/json", runtimeScene.getScene().getVariables().get("ServerResponse"), runtimeScene.getScene().getVariables().get("ServerWrongResponse")), (runtimeScene) => (gdjs.GameoverCode.asyncCallback13916156(runtimeScene, asyncObjectsList)), 13916156, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("/api/saveData/", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(20)), "POST", "application/json", runtimeScene.getScene().getVariables().get("ServerResponse"), runtimeScene.getScene().getVariables().get("ServerWrongResponse")), (runtimeScene) => (gdjs.GameoverCode.asyncCallback13916156(runtimeScene, asyncObjectsList)), 13916156, asyncObjectsList);
 }
 }
 
