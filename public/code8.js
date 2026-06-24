@@ -229,25 +229,6 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(2).getAsNumber() == 0);
-}
-if (isConditionTrue_0) {
-{gdjs.evtTools.network.sendAsyncRequest("/api/saveData/", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(20)), "POST", "application/json", runtimeScene.getScene().getVariables().getFromIndex(3), gdjs.VariablesContainer.badVariable);
-}
-{runtimeScene.getScene().getVariables().getFromIndex(2).setNumber(1);
-}
-}
-
-}
-
-
-};gdjs.DuoGameoverCode.eventsList3 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("MainMenu"), gdjs.DuoGameoverCode.GDMainMenuObjects1);
@@ -270,6 +251,8 @@ gdjs.copyArray(runtimeScene.getObjects("真棒"), gdjs.DuoGameoverCode.GD_953049
 {gdjs.evtTools.sound.playSound(runtimeScene, "lose game.mp3", false, gdjs.evtTools.sound.getGlobalVolume(runtimeScene), 1);
 }
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "button");
+}
+{runtimeScene.getScene().getVariables().getFromIndex(2).setNumber(0);
 }
 
 { //Subevents
@@ -311,9 +294,23 @@ if (isConditionTrue_0) {
 }
 {gdjs.evtTools.storage.writeNumberInJSONFile("SaveData", "DuoHighestScore", gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(19)));
 }
+}
 
-{ //Subevents
-gdjs.DuoGameoverCode.eventsList2(runtimeScene);} //End of subevents
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(2).getAsNumber() == 0);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.network.sendAsyncRequest("https://blockdowngame.onrender.com/api/saveData", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(20)), "POST", "application/json", runtimeScene.getScene().getVariables().getFromIndex(3), gdjs.VariablesContainer.badVariable);
+}
+{runtimeScene.getScene().getVariables().getFromIndex(2).setNumber(1);
+}
 }
 
 }
@@ -351,7 +348,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Down", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12338812);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13806668);
 }
 }
 if (isConditionTrue_0) {
@@ -382,7 +379,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Up", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12156188);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13808156);
 }
 }
 if (isConditionTrue_0) {
@@ -491,7 +488,7 @@ gdjs.DuoGameoverCode.GDNewSprite2Objects1.length = 0;
 gdjs.DuoGameoverCode.GDNewSprite2Objects2.length = 0;
 gdjs.DuoGameoverCode.GDNewSprite2Objects3.length = 0;
 
-gdjs.DuoGameoverCode.eventsList3(runtimeScene);
+gdjs.DuoGameoverCode.eventsList2(runtimeScene);
 gdjs.DuoGameoverCode.GDGameOverObjects1.length = 0;
 gdjs.DuoGameoverCode.GDGameOverObjects2.length = 0;
 gdjs.DuoGameoverCode.GDGameOverObjects3.length = 0;

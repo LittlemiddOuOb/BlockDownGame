@@ -416,6 +416,8 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(24).add(1);
 }
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("DuoHighestScore").setNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getAsNumber());
+}
 }
 
 }
@@ -784,7 +786,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13689292);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13756772);
 }
 }
 if (isConditionTrue_0) {
@@ -809,7 +811,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Left", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13690900);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13758380);
 }
 }
 if (isConditionTrue_0) {
@@ -834,7 +836,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Right");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13692340);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13759820);
 }
 }
 if (isConditionTrue_0) {
@@ -859,7 +861,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Right", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13693676);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13761156);
 }
 }
 if (isConditionTrue_0) {
@@ -901,7 +903,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13699868);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13767620);
 }
 }
 if (isConditionTrue_0) {
@@ -926,7 +928,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 2, "Left", "Left", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13701772);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13769508);
 }
 }
 if (isConditionTrue_0) {
@@ -951,7 +953,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13703228);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13770948);
 }
 }
 if (isConditionTrue_0) {
@@ -976,7 +978,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 2, "Left", "Right", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13704548);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13772284);
 }
 }
 if (isConditionTrue_0) {

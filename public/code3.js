@@ -524,7 +524,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13507684);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13575964);
 }
 }
 if (isConditionTrue_0) {
@@ -549,7 +549,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Left", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13509004);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13577284);
 }
 }
 if (isConditionTrue_0) {
@@ -574,7 +574,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Right", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13510188);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13578740);
 }
 }
 if (isConditionTrue_0) {
@@ -599,7 +599,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13511940);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13580180);
 }
 }
 if (isConditionTrue_0) {
@@ -624,7 +624,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Right");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13513020);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13581564);
 }
 }
 if (isConditionTrue_0) {
@@ -649,7 +649,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "d");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13514772);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13582708);
 }
 }
 if (isConditionTrue_0) {

@@ -9,7 +9,7 @@ gdjs.evtsExt__URLTools__Redirect = {};
 gdjs.evtsExt__URLTools__Redirect.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__URLTools__Redirect.userFunc0xc187f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__URLTools__Redirect.userFunc0x9d78f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 location.replace(eventsFunctionContext.getArgument("to"));
 
@@ -19,7 +19,7 @@ gdjs.evtsExt__URLTools__Redirect.eventsList0 = function(runtimeScene, eventsFunc
 {
 
 
-gdjs.evtsExt__URLTools__Redirect.userFunc0xc187f8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__URLTools__Redirect.userFunc0x9d78f8(runtimeScene, eventsFunctionContext);
 
 }
 
