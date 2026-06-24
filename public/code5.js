@@ -201,7 +201,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Up", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13660716);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12782292);
 }
 }
 if (isConditionTrue_0) {
@@ -228,7 +228,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Down", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13661988);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14239084);
 }
 }
 if (isConditionTrue_0) {
@@ -247,13 +247,13 @@ gdjs.copyArray(runtimeScene.getObjects("NewSprite2"), gdjs.GameoverCode.GDNewSpr
 }
 
 
-};gdjs.GameoverCode.asyncCallback13667388 = function (runtimeScene, asyncObjectsList) {
+};gdjs.GameoverCode.asyncCallback10467148 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.GameoverCode.localVariables);
 {runtimeScene.getScene().getVariables().getFromIndex(2).setNumber(1);
 }
 gdjs.GameoverCode.localVariables.length = 0;
 }
-gdjs.GameoverCode.idToCallbackMap.set(13667388, gdjs.GameoverCode.asyncCallback13667388);
+gdjs.GameoverCode.idToCallbackMap.set(10467148, gdjs.GameoverCode.asyncCallback10467148);
 gdjs.GameoverCode.eventsList2 = function(runtimeScene) {
 
 {
@@ -263,7 +263,7 @@ gdjs.GameoverCode.eventsList2 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.GameoverCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("https://blockdowngame.onrender.com/api/saveData", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(20)), "POST", "application/json", runtimeScene.getScene().getVariables().get("ServerResponse"), runtimeScene.getScene().getVariables().get("ServerWrongResponse")), (runtimeScene) => (gdjs.GameoverCode.asyncCallback13667388(runtimeScene, asyncObjectsList)), 13667388, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("https://blockdowngame.onrender.com/api/saveData", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(20)), "POST", "application/json", runtimeScene.getScene().getVariables().get("ServerResponse"), runtimeScene.getScene().getVariables().get("ServerWrongResponse")), (runtimeScene) => (gdjs.GameoverCode.asyncCallback10467148(runtimeScene, asyncObjectsList)), 10467148, asyncObjectsList);
 }
 }
 
@@ -292,7 +292,11 @@ gdjs.copyArray(runtimeScene.getObjects("MainMenu"), gdjs.GameoverCode.GDMainMenu
 }
 {runtimeScene.getScene().getVariables().getFromIndex(2).setNumber(0);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("DuoHighestScore").setNumber(runtimeScene.getGame().getVariables().getFromIndex(16).getAsNumber());
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("DuoHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16)));
+}
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("EasyHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(14)));
+}
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("HellHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(15)));
 }
 
 { //Subevents
@@ -337,7 +341,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "Button") >= 2;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13663620);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16611764);
 }
 }
 }
@@ -386,22 +390,6 @@ if (isConditionTrue_0) {
 
 {
 
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(2).getAsNumber() == 0);
-}
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.GameoverCode.eventsList2(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
 gdjs.copyArray(runtimeScene.getObjects("MainMenu"), gdjs.GameoverCode.GDMainMenuObjects1);
 
 let isConditionTrue_0 = false;
@@ -417,6 +405,26 @@ gdjs.GameoverCode.GDMainMenuObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Main", false);
 }
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(2).getAsNumber() == 0);
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1).getAsString()) >= 2;
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.GameoverCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 }
