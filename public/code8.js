@@ -373,7 +373,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Down", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13806668);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16593356);
 }
 }
 if (isConditionTrue_0) {
@@ -404,7 +404,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Axis_pushed.func(runtimeScene, 1, "Left", "Up", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13808156);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12277996);
 }
 }
 if (isConditionTrue_0) {
