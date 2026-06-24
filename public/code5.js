@@ -292,11 +292,13 @@ gdjs.copyArray(runtimeScene.getObjects("MainMenu"), gdjs.GameoverCode.GDMainMenu
 }
 {runtimeScene.getScene().getVariables().getFromIndex(2).setNumber(0);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("DuoHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16)));
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("DuoHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(19)));
 }
-{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("EasyHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(14)));
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("HellHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("HellHIghestScore")));
 }
-{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("HellHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(15)));
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("EasyHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17)));
+}
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("playername").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(27)));
 }
 
 { //Subevents

@@ -182,10 +182,23 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(25).getAsNumber() == 1);
 }
 if (isConditionTrue_0) {
-/* Reuse gdjs.DuoGameoverCode.GD_9530495_9526834Objects1 */
-{for(var i = 0, len = gdjs.DuoGameoverCode.GD_9530495_9526834Objects1.length ;i < len;++i) {
-    gdjs.DuoGameoverCode.GD_9530495_9526834Objects1[i].getBehavior("Opacity").setOpacity(255);
+gdjs.copyArray(gdjs.DuoGameoverCode.GD_9530495_9526834Objects1, gdjs.DuoGameoverCode.GD_9530495_9526834Objects2);
+
+{for(var i = 0, len = gdjs.DuoGameoverCode.GD_9530495_9526834Objects2.length ;i < len;++i) {
+    gdjs.DuoGameoverCode.GD_9530495_9526834Objects2[i].getBehavior("Opacity").setOpacity(255);
 }
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtTools.network.sendAsyncRequest("https://blockdowngame.onrender.com/api/saveData", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(20)), "POST", "application/json", gdjs.VariablesContainer.badVariable, gdjs.VariablesContainer.badVariable);
 }
 }
 
@@ -254,11 +267,13 @@ gdjs.copyArray(runtimeScene.getObjects("真棒"), gdjs.DuoGameoverCode.GD_953049
 }
 {runtimeScene.getScene().getVariables().getFromIndex(2).setNumber(0);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("DuoHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16)));
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("DuoHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(19)));
 }
-{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("EasyHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(14)));
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("EasyHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17)));
 }
-{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("HellHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(15)));
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("playername").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(27)));
+}
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("HellHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("HellHIghestScore")));
 }
 
 { //Subevents
