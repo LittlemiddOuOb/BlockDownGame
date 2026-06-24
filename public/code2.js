@@ -145,11 +145,11 @@ gdjs.copyArray(runtimeScene.getObjects("HellHighestScore2"), gdjs.SingleGamemode
 {gdjs.evtTools.storage.readNumberFromJSONFile("SaveData", "HellHighestScore", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(18));
 }
 {for(var i = 0, len = gdjs.SingleGamemodeCode.GDEasyHighestScore3Objects1.length ;i < len;++i) {
-    gdjs.SingleGamemodeCode.GDEasyHighestScore3Objects1[i].getBehavior("Text").setText("Easy Highest Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17))));
+    gdjs.SingleGamemodeCode.GDEasyHighestScore3Objects1[i].getBehavior("Text").setText("Easy Highest Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20).getChild("EasyHighestScore"))));
 }
 }
 {for(var i = 0, len = gdjs.SingleGamemodeCode.GDHellHighestScore2Objects1.length ;i < len;++i) {
-    gdjs.SingleGamemodeCode.GDHellHighestScore2Objects1[i].getBehavior("Text").setText("Insane Highest Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(18))));
+    gdjs.SingleGamemodeCode.GDHellHighestScore2Objects1[i].getBehavior("Text").setText("Insane Highest Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20).getChild("HellHighestScore"))));
 }
 }
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "Button");

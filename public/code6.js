@@ -84,7 +84,7 @@ gdjs.copyArray(runtimeScene.getObjects("HighestScore2"), gdjs.DuoGamemodeMenuCod
 {gdjs.evtTools.storage.readNumberFromJSONFile("SaveData", "DuoHighestScore", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(17));
 }
 {for(var i = 0, len = gdjs.DuoGamemodeMenuCode.GDHighestScore2Objects1.length ;i < len;++i) {
-    gdjs.DuoGamemodeMenuCode.GDHighestScore2Objects1[i].getBehavior("Text").setText("Highest Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(19))));
+    gdjs.DuoGamemodeMenuCode.GDHighestScore2Objects1[i].getBehavior("Text").setText("Highest Score: " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20).getChild("DuoHighestScore"))));
 }
 }
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "button");
