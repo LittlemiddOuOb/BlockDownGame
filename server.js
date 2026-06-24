@@ -1,10 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser'); 
 const DB = require('nedb-promises');
-const cors = require('cors'); 
 
 const app = express();
-app.use(cors());
+
 
 // 改用動態 Port，如果 Render 雲端沒有指定，就預設使用 3000 或 80
 const port = process.env.PORT || 3000;
