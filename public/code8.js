@@ -254,6 +254,12 @@ gdjs.copyArray(runtimeScene.getObjects("真棒"), gdjs.DuoGameoverCode.GD_953049
 }
 {runtimeScene.getScene().getVariables().getFromIndex(2).setNumber(0);
 }
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("DuoHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16)));
+}
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("EasyHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(14)));
+}
+{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("HellHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(15)));
+}
 
 { //Subevents
 gdjs.DuoGameoverCode.eventsList0(runtimeScene);} //End of subevents
@@ -305,6 +311,10 @@ if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 {isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(2).getAsNumber() == 0);
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1).getAsString()) >= 2;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.network.sendAsyncRequest("https://blockdowngame.onrender.com/api/saveData", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(20)), "POST", "application/json", runtimeScene.getScene().getVariables().getFromIndex(3), gdjs.VariablesContainer.badVariable);
