@@ -57,7 +57,7 @@ gdjs.MainCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.MainCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("https://blockdowngame.onrender.com/api/loadData/" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("PlayerName")), "", "GET", "application/json", runtimeScene.getScene().getVariables().getFromIndex(3), runtimeScene.getScene().getVariables().getFromIndex(4)), (runtimeScene) => (gdjs.MainCode.asyncCallback13382052(runtimeScene, asyncObjectsList)), 13382052, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("https://blockdowngame.onrender.com/api/loadData/" + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(27)), "", "GET", "application/json", runtimeScene.getScene().getVariables().getFromIndex(3), runtimeScene.getScene().getVariables().getFromIndex(4)), (runtimeScene) => (gdjs.MainCode.asyncCallback13382052(runtimeScene, asyncObjectsList)), 13382052, asyncObjectsList);
 }
 }
 
