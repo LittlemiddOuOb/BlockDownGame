@@ -172,13 +172,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(27).setString("Guest");
 }
-{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("DuoHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(19)));
-}
 {runtimeScene.getGame().getVariables().getFromIndex(20).getChild("playername").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(27)));
-}
-{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("HellHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().get("HellHIghestScore")));
-}
-{runtimeScene.getGame().getVariables().getFromIndex(20).getChild("EasyHighestScore").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17)));
 }
 }
 
