@@ -436,7 +436,10 @@ gdjs.GameoverCode.eventsList2(runtimeScene);} //End of subevents
 
 
 let isConditionTrue_0 = false;
-{
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(17158764);
+}
+if (isConditionTrue_0) {
 {gdjs.evtTools.network.sendAsyncRequest("https://blockdowngame.onrender.com/api/saveData", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(20)), "POST", "application/json", gdjs.VariablesContainer.badVariable, gdjs.VariablesContainer.badVariable);
 }
 }
